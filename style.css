@@ -50,7 +50,7 @@ input{
     padding: 10px;
 }
 
-button{
+.addButton{
     outline: none;
     border: none;
     padding: 16px 30px;
@@ -62,10 +62,10 @@ button{
     transition: 0.2s all;
 }
 
-button:hover{
+.addButton:hover{
     transform: scale(1.05);
 }
-button:active{
+.addButton:active{
     transform: scale(0.98); 
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
@@ -78,6 +78,9 @@ ul li{
     cursor: pointer;
     position: relative;
     width: 80%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
 
 ul li::before{
@@ -110,10 +113,32 @@ ul li span::before{
     height: 30px;
     position: absolute;
     left: 450px;
-    top: 8px;
+    top: 5px;
     transition: 0.2s;
 }
 
 ul li span:hover::before{
     transform: scale(1.1);
+}
+
+.editBtn{
+    border: none;
+    position: absolute;
+    right: -60px;
+    top: 6px;
+    padding: 5px 10px;
+    background-color: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 40px;
+    transition: 0.2s all;
+}
+
+.editBtn:hover{
+    transform: scale(1.05);
+}
+.editBtn:active{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
